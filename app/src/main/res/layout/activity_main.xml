@@ -67,8 +67,7 @@
             android:layout_alignStart="@+id/editText_rollno"
             android:ems="6"
             android:hint="Enter Name"
-            android:inputType="textPersonName"
-            android:textSize="24sp" />
+            android:inputType="textPersonName"/>
 
         <EditText
             android:id="@+id/editText_rollno"
