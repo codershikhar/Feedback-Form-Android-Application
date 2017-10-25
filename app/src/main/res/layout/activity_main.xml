@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shikhar420.feedback.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimaryLight">
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="120dp"
+            android:text="Name : "
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_rollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_name"
+            android:layout_alignStart="@+id/textView_name"
+            android:layout_below="@+id/textView_name"
+            android:layout_marginTop="52dp"
+            android:text="Roll No. : "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_rollno"
+            android:layout_alignStart="@+id/textView_rollno"
+            android:layout_below="@+id/textView_rollno"
+            android:layout_marginTop="53dp"
+            android:text="Subject :"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_name"
+            android:layout_alignBottom="@+id/textView_name"
+            android:layout_alignLeft="@+id/editText_rollno"
+            android:layout_alignStart="@+id/editText_rollno"
+            android:ems="6"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editText_rollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_rollno"
+            android:layout_alignBottom="@+id/textView_rollno"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/textView_rollno"
+            android:layout_toRightOf="@+id/textView_rollno"
+            android:ems="6"
+            android:hint="Enter Roll No."
+            android:inputType="number"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinner_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_subject"
+            android:layout_alignEnd="@+id/editText_rollno"
+            android:layout_alignLeft="@+id/editText_rollno"
+            android:layout_alignRight="@+id/editText_rollno"
+            android:layout_alignStart="@+id/editText_rollno"
+            android:contextClickable="false"
+            android:entries="@array/subject_array" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_subjects"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="nextOnClick"
+            android:text="  Next...  "
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subject_array">
+        <item>SEPM</item>
+        <item>TOC</item>
+        <item>DBMS</item>
+        <item>CN</item>
+        <item>ISEE</item>
+        <item>SDL</item>
+    </string-array>
+
+    <string-array name="rating_array">
+        <item>Strongly Agree</item>
+        <item>Agree</item>
+        <item>Neutral</item>
+        <item>Disagree</item>
+        <item>Strongly Disagree</item>
+    </string-array>
+
+</resources>

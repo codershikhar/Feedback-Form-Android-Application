@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="0"
+        android:textSize="16dp"
+        android:text="Student Name : "
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textView_rollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="1"
+        android:textSize="16dp"
+        android:text="Student Roll No. : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="2"
+        android:textSize="16dp"
+        android:text="Subject : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="3"
+        android:textSize="16dp"
+        android:text="Teacher Name : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="4"
+        android:text="1.    Teacher is prepared for \nclass : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="5"
+        android:text="2.    Teacher knows His/Her \nSubject : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="6"
+        android:text="3.    Teacher is Organised \nand neet : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="7"
+        android:text="4.    Teacher Plans class time \nand Assignments : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="8"
+        android:text="5.    Teacher is flexible : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="9"
+        android:text="6.    Teacher is clear about \nassignments and test : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="10"
+        android:text="7.    Teacher allows you to be \nactive in the classroom : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="11"
+        android:text="8.    Teacher manages the \ntime well : "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_q9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_row="12"
+        android:text="9.  Teacher grades Fairly : "
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="4"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="5"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="6"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="7"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_column="1"
+        android:layout_row="8"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="9"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="10"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner8"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:layout_row="11"
+        android:entries="@array/rating_array" />
+
+    <Spinner
+        android:id="@+id/spinner9"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginTop="5dp"
+        android:layout_row="12"
+        android:entries="@array/rating_array" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_row="13"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="submitOnClick"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
+
+</GridLayout>
